@@ -1,8 +1,12 @@
 {
-  "name": "form-react",
-  "private": true,
+  "name": "@meanotaku/form-react",
   "version": "0.0.1",
   "type": "module",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -47,6 +51,7 @@
     "vite-plugin-lib-inject-css": "^2.1.1"
   },
   "dependencies": {
+    "@meanotaku/form-react": "file:",
     "form-react": "file:"
   },
   "eslintConfig": {
