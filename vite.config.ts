@@ -7,7 +7,7 @@ import dts from 'vite-plugin-dts'
 export default defineConfig({
   plugins: [
     react(), 
-    dts(),
+    dts({ tsconfigPath: './tsconfig.app.json' }),
   ],
   build: {
     lib: {
@@ -18,7 +18,7 @@ export default defineConfig({
       fileName: 'form-react',
     },
     rollupOptions: {
-      external: ['react', 'react-dom'],
+      external: ['react', 'react/jsx-runtime'],
     },
   },
 })
